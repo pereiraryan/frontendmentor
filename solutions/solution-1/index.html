@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 200;
+        }
+        .Features {
+            max-width: 1440px;
+            height: auto;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+        .Features-title {
+           font-size: 36px;
+           font-weight: 200;
+           text-align: center;
+           color: #89878d;
+           padding: 75px 0 0;
+        }
+        .Features-sub-title {
+            font-size: 36px;
+            font-weight: 400;
+            text-align: center;
+            color: #282733;
+            padding: 0 0 20px;
+        }
+        .Features-desc {
+            font-size: 1em;
+            font-weight: 200;
+            text-align: center;
+            color: #cdcdce;
+            padding: 0px 0 40px;
+            width: 33%;
+            margin: 0 auto;
+        }
+        .Features-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        .Features-card {
+            flex-wrap: wrap;
+            height: 250px;
+            width: 350px;
+            
+        }
+        .Features-col {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .Features-col:nth-child(1) {
+            align-items: center;
+        }
+        .Features-col .Features-card:nth-child(1) {
+            border-top: 4px solid hsl(180, 62%, 55%);
+            align-items: center;
+        }
+        .Features-col:nth-child(2) .Features-card:nth-child(1) {
+            border-top: 4px solid hsl(0, 78%, 62%);
+            align-items: flex-start;
+        }
+        .Features-col:nth-child(2) .Features-card:nth-child(2) {
+            margin-top: 35px;
+            border-top: 4px solid hsl(34, 97%, 64%);
+            align-items: flex-end;
+        }
+        .Features-col:nth-child(3) .Features-card:nth-child(1) {
+            border-top: 4px solid hsl(212, 86%, 64%);
+            align-items: center;
+        }
+        .Features-card .Card-img {
+            float: right;
+            padding: 20px;
+        }
+        .Features-card .Card-img img {
+            width: 60px;
+            height: 60px;
+        }
+        .Features-card {
+            box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px ;
+        }
+        .Card-title , .Card-desc {
+            padding: 0 20px;
+        }
+        .Card-title {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 20px 20px 10px;
+        }
+        .Card-desc  {
+            font-size: 14px;
+            color: #cdcdce;
+        }
+        /* On screens that are 375px or less, set the background color to olive */
+@media screen and (max-width: 375px) {
+    .Features-title ,  .Features-sub-title  {
+           font-size: 24px;
+    }
+    .Features-desc {
+        width: 80%;
+    }
+    .Features-col {
+        height: auto;
+        width: 85%;
+    }
+    .Features-card {
+        width: 100%;
+    }
+    .Features-col:nth-child(2) .Features-card:nth-child(1) , .Features-col:nth-child(3) .Features-card:nth-child(1) {
+        margin-top: 35px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <section class="Features">
+        <h4 class="Features-title">Reliable, efficent delivey</h4>
+        <h6 class="Features-sub-title">Powered by technology</h6>
+        <div class="Features-desc"> Our Artificial Intelligence powered tools use millions of project data points 
+            to ensure that your project is successful
+        </div>
+        <div class="Features-wrapper">
+            <div class="Features-col">
+                <div class="Features-card">
+                    <div class="Card-title">Supervisor</div>
+                    <div class="Card-desc">  Monitors activity to identify project roadblocks</div>
+                    <div class="Card-img"><img src="/mockups/quater-1-four-card-feature-section-master/images/icon-supervisor.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="Features-col">
+                <div class="Features-card">
+                    <div class="Card-title">Team Builder</div>
+                    <div class="Card-desc">Scans our talent network to create the optimal team for your project</div>
+                    <div class="Card-img"><img src="/mockups/quater-1-four-card-feature-section-master/images/icon-team-builder.svg" alt=""></div>
+                </div>
+                <div class="Features-card">
+                    <div class="Card-title">Karma</div>
+                    <div class="Card-desc">Regularly evaluates our talent to ensure quality</div>
+                    <div class="Card-img"><img src="/mockups/quater-1-four-card-feature-section-master/images/icon-karma.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="Features-col">
+                <div class="Features-card">
+                    <div class="Card-title">Calculator</div>
+                    <div class="Card-desc">Uses data from past projects to provide better delivery estimates</div>
+                    <div class="Card-img"><img src="/mockups/quater-1-four-card-feature-section-master/images/icon-calculator.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
